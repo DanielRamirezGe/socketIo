@@ -24,6 +24,15 @@ io.on("connection", socket =>{
     socket.conn.once("upgrade", () => {
         console.log("hemos pasado a ", socket.conn.transport.name)
     })
+
+    socket.emit("welcome", "Ahora estas conectado")
+
+    socket.on("serverSend", data => {
+        console.log(data)
+    })
+    //emision a todos
+    io.emit("everyone", "se conecto el cliente " + socket.id + " en total van: " + io.engine.clientsCount)
+
 })
 
 httpServer.listen(3000)
