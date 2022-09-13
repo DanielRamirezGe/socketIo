@@ -1,0 +1,28 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "SocketIo example",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielRamirezGe/socketIo.git"
+  },
+  "author": "Daniel Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielRamirezGe/socketIo/issues"
+  },
+  "homepage": "https://github.com/DanielRamirezGe/socketIo#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.2"
+  },
+  "devDependencies": {
+    "bufferutil": "^4.0.6",
+    "utf-8-validate": "^5.0.9"
+  }
+}
